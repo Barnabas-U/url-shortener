@@ -1,0 +1,341 @@
+* {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 280px) {
+  .wrapper {
+    width: 100%;
+    background-color: rgba(191, 191, 191, 0.3);
+    background-image: linear-gradient(to bottom, white 43em, rgba(0, 0, 0, 0) 20%);
+  }
+  .wrapper .nav-bar {
+    z-index: 100;
+    width: 90%;
+    height: 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1em;
+    padding: 5%;
+    background-color: white;
+  }
+  .wrapper .nav-bar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+  }
+  .wrapper .nav-bar .logo #logo-img {
+    width: 5em;
+  }
+  .wrapper .nav-bar .logo .menu-bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 1.5em;
+    width: 2em;
+  }
+  .wrapper .nav-bar .logo .menu-bars div {
+    height: 0.2em;
+    width: 100%;
+    background-color: hsl(0, 0%, 75%);
+  }
+  .wrapper .nav-bar .menu-box {
+    display: none;
+    position: fixed;
+    background-color: hsl(255, 11%, 22%);
+    height: 70vh;
+    width: 84%;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    padding: 4%;
+  }
+  .wrapper .nav-bar .menu-box .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1em solid hsl(0, 0%, 75%);
+  }
+  .wrapper .nav-bar .menu-box .menu a {
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: larger;
+    text-decoration: none;
+  }
+  .wrapper .nav-bar .menu-box .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper .nav-bar .menu-box .login a {
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: larger;
+    text-decoration: none;
+  }
+  .wrapper .content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .wrapper .content .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30%;
+  }
+  .wrapper .content .intro .left {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper .content .intro .left h1 {
+    line-height: 1.3em;
+    text-align: center;
+    font-size: xx-large;
+    color: hsl(255, 11%, 22%);
+    margin-bottom: 0.25em;
+  }
+  .wrapper .content .intro .left .pp {
+    text-align: center;
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+    margin-bottom: 1em;
+  }
+  .wrapper .content .intro .left .started-btn {
+    background-color: hsl(180, 66%, 49%);
+    text-align: center;
+    width: 60%;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 5em;
+    padding: 0.5em;
+  }
+  .wrapper .content .intro .illustration-working {
+    background-image: url("images/illustration-working.svg");
+    background-position: left;
+    background-size: 150% 100%;
+    width: 100%;
+    height: 18em;
+  }
+  .wrapper .content .shorten-sec {
+    margin-top: 4em;
+  }
+  .wrapper .content .shorten-sec .shorten-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/bg-shorten-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 70% 80%;
+    background-color: hsl(257, 27%, 26%);
+    padding: 1.5em;
+    border-radius: 1em;
+  }
+  .wrapper .content .shorten-sec .shorten-input input {
+    font-size: medium;
+    height: 2.5em;
+    width: 100%;
+    border: none;
+    border-radius: 0.5em;
+  }
+  .wrapper .content .shorten-sec .shorten-input p {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    width: 100%;
+    border-radius: 0.5em;
+    margin-top: 1.5em;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .wrapper .content .shorten-sec .shorten-output {
+    margin-top: 2em;
+    background-color: white;
+    border-radius: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .wrapper .content .shorten-sec .shorten-output p {
+    font-size: small;
+    font-weight: 700;
+    padding-left: 1em;
+    border-bottom: 0.1em solid rgba(191, 191, 191, 0.3);
+    padding-bottom: 0.5em;
+  }
+  .wrapper .content .shorten-sec .shorten-output h4 {
+    font-size: small;
+    font-weight: 700;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    color: hsl(180, 66%, 49%);
+  }
+  .wrapper .content .shorten-sec .shorten-output button {
+    background-color: hsl(180, 66%, 49%);
+    font-weight: 900;
+    font-size: large;
+    color: white;
+    width: 90%;
+    height: 2em;
+    border: none;
+    border-radius: 0.3em;
+    margin-left: 0.7em;
+  }
+  .wrapper .content .advanced {
+    margin-top: 5em;
+  }
+  .wrapper .content .advanced .adv-1 {
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper .content .advanced .adv-1 h2 {
+    font-size: x-large;
+    margin-bottom: 0.5em;
+  }
+  .wrapper .content .advanced .adv-1 p {
+    color: hsl(257, 7%, 63%);
+    font-weight: 700;
+    font-size: small;
+    text-align: center;
+  }
+  .wrapper .content .advanced .adv-2 {
+    position: relative;
+  }
+  .wrapper .content .advanced .adv-2 div {
+    position: relative;
+    background-color: white;
+    padding: 0.5em;
+    padding-top: 5em;
+    margin-bottom: 5em;
+    border-radius: 2%;
+  }
+  .wrapper .content .advanced .adv-2 div img {
+    position: absolute;
+    left: 35%;
+    top: -15%;
+    background-color: hsl(257, 27%, 26%);
+    padding: 1em;
+    border-radius: 50%;
+  }
+  .wrapper .content .advanced .adv-2 div h4 {
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 0.5em;
+  }
+  .wrapper .content .advanced .adv-2 div p {
+    text-align: center;
+    color: hsl(257, 7%, 63%);
+    font-size: small;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+  .wrapper .content .advanced .adv-2 .blue-line {
+    position: absolute;
+    top: 0;
+    left: 47%;
+    z-index: -10;
+    height: 80%;
+    width: 0.5em;
+    padding: 0;
+    background-color: hsl(180, 66%, 49%);
+  }
+  .wrapper footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(260, 8%, 14%);
+    padding-bottom: 1em;
+  }
+  .wrapper footer .boost {
+    width: 100%;
+    background-color: hsl(257, 27%, 26%);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-image: url("images/bg-boost-mobile.svg");
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .wrapper footer .boost div {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper footer .boost div h2 {
+    font-size: larger;
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: white;
+  }
+  .wrapper footer .boost div p {
+    margin-top: 0.5em;
+    background-color: hsl(180, 66%, 49%);
+    text-align: center;
+    font-weight: 600;
+    border-radius: 2em;
+    width: 70%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+  }
+  .wrapper footer .shortly {
+    margin-top: 2em;
+  }
+  .wrapper footer .shortly h1 {
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 1em;
+  }
+  .wrapper footer .links div {
+    margin-bottom: 1em;
+  }
+  .wrapper footer .links div h3 {
+    font-size: small;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .wrapper footer .links div p {
+    font-size: smaller;
+    color: hsl(0, 0%, 75%);
+    text-align: center;
+  }
+  .wrapper footer .links .socials img {
+    height: 1em;
+    width: 1em;
+    margin: 0.5em;
+  }
+  .attribution {
+    background-color: hsl(260, 8%, 14%);
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 75%);
+  }
+  .attribution a {
+    color: hsl(180, 66%, 49%);
+  }
+}/*# sourceMappingURL=style.css.map */

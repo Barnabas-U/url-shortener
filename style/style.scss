@@ -1,0 +1,394 @@
+* {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+$Cyan: hsl(180, 66%, 49%);
+$Dark-Violet: hsl(257, 27%, 26%);
+$Red: hsl(0, 87%, 67%);
+$Gray: hsl(0, 0%, 75%);
+$Grayish-Violet: hsl(257, 7%, 63%);
+$Very-Dark-Blue: hsl(255, 11%, 22%);
+$Very-Dark-Violet: hsl(260, 8%, 14%);
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 280px) {
+  .wrapper {
+    width: 100%;
+    background-color: rgba($color: $Gray, $alpha: 0.3);
+    background-image: linear-gradient(
+      to bottom,
+      white 43em,
+      rgba(0, 0, 0, 0) 20%
+    );
+
+    .nav-bar {
+      z-index: 100;
+      width: 90%;
+      height: 3em;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 1em;
+      padding: 5%;
+      background-color: white;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1em;
+
+        #logo-img {
+          width: 5em;
+        }
+
+        .menu-bars {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          height: 1.5em;
+          width: 2em;
+
+          div {
+            height: 0.2em;
+            width: 100%;
+            background-color: $Gray;
+          }
+        }
+      }
+
+      .menu-box {
+        display: none;
+        position: fixed;
+        background-color: $Very-Dark-Blue;
+        height: 70vh;
+        width: 84%;
+        margin-top: 1em;
+        border-radius: 0.5em;
+        padding: 4%;
+
+        .menu {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 0.1em solid $Gray;
+          a {
+            color: white;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-size: larger;
+            text-decoration: none;
+          }
+        }
+
+        .login {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          a {
+            color: white;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-size: larger;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .content {
+      margin-left: 5%;
+      margin-right: 5%;
+      .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30%;
+
+        .left {
+          padding-top: 2em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          h1 {
+            line-height: 1.3em;
+            text-align: center;
+            font-size: xx-large;
+            color: $Very-Dark-Blue;
+            margin-bottom: 0.25em;
+          }
+
+          .pp {
+            text-align: center;
+            color: $Gray;
+            font-weight: 500;
+            margin-bottom: 1em;
+          }
+
+          .started-btn {
+            background-color: $Cyan;
+            text-align: center;
+            width: 60%;
+            color: white;
+            font-weight: 600;
+            font-size: large;
+            border-radius: 5em;
+            padding: 0.5em;
+          }
+        }
+
+        .illustration-working {
+          background-image: url("images/illustration-working.svg");
+          background-position: left;
+          background-size: 150% 100%;
+          width: 100%;
+          height: 18em;
+        }
+      }
+
+      .shorten-sec {
+        margin-top: 4em;
+
+        .shorten-input {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-image: url("images/bg-shorten-mobile.svg");
+          background-repeat: no-repeat;
+          background-position: top right;
+          background-size: 70% 80%;
+          background-color: $Dark-Violet;
+          padding: 1.5em;
+          border-radius: 1em;
+
+          input {
+            font-size: medium;
+            height: 2.5em;
+            width: 100%;
+            border: none;
+            border-radius: 0.5em;
+          }
+
+          p {
+            background-color: $Cyan;
+            color: white;
+            width: 100%;
+            border-radius: 0.5em;
+            margin-top: 1.5em;
+            text-align: center;
+            font-weight: 600;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+          }
+        }
+
+        .shorten-output {
+          margin-top: 2em;
+          background-color: white;
+          border-radius: 1em;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          p {
+            font-size: small;
+            font-weight: 700;
+            padding-left: 1em;
+            border-bottom: 0.1em solid rgba($color: $Gray, $alpha: 0.3);
+            padding-bottom: 0.5em;
+          }
+
+          h4 {
+            font-size: small;
+            font-weight: 700;
+            padding-left: 1em;
+            padding-bottom: 0.5em;
+            padding-top: 0.5em;
+            color: $Cyan;
+          }
+
+          button {
+            background-color: $Cyan;
+            font-weight: 900;
+            font-size: large;
+            color: white;
+            width: 90%;
+            height: 2em;
+            border: none;
+            border-radius: 0.3em;
+            margin-left: 0.7em;
+          }
+        }
+      }
+
+      .advanced {
+        margin-top: 5em;
+
+        .adv-1 {
+          margin-bottom: 5em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          h2 {
+            font-size: x-large;
+            margin-bottom: 0.5em;
+          }
+
+          p {
+            color: $Grayish-Violet;
+            font-weight: 700;
+            font-size: small;
+            text-align: center;
+          }
+        }
+
+        .adv-2 {
+          position: relative;
+          div {
+            position: relative;
+            background-color: white;
+            padding: 0.5em;
+            padding-top: 5em;
+            margin-bottom: 5em;
+            border-radius: 2%;
+            img {
+              position: absolute;
+              left: 35%;
+              top: -15%;
+              background-color: $Dark-Violet;
+              padding: 1em;
+              border-radius: 50%;
+            }
+
+            h4 {
+              text-align: center;
+              font-size: larger;
+              margin-bottom: 0.5em;
+            }
+
+            p {
+              text-align: center;
+              color: $Grayish-Violet;
+              font-size: small;
+              font-weight: 600;
+              margin-bottom: 0.5em;
+            }
+          }
+
+          .blue-line {
+            position: absolute;
+            top: 0;
+            left: 47%;
+            z-index: -10;
+            height: 80%;
+            width: 0.5em;
+            padding: 0;
+            background-color: $Cyan;
+          }
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $Very-Dark-Violet;
+      padding-bottom: 1em;
+
+      .boost {
+        width: 100%;
+        background-color: $Dark-Violet;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        background-image: url("images/bg-boost-mobile.svg");
+        background-position: center;
+        background-size: 100% 100%;
+        div {
+          padding: 1em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          h2 {
+            font-size: larger;
+            text-align: center;
+            margin-bottom: 0.5em;
+            color: white;
+          }
+
+          p {
+            margin-top: 0.5em;
+            background-color: $Cyan;
+            text-align: center;
+            font-weight: 600;
+            border-radius: 2em;
+            width: 70%;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            color: white;
+          }
+        }
+      }
+
+      .shortly {
+        margin-top: 2em;
+
+        h1 {
+          color: white;
+          font-size: xx-large;
+          margin-bottom: 1em;
+        }
+      }
+
+      .links {
+        div {
+          margin-bottom: 1em;
+          h3 {
+            font-size: small;
+            font-weight: 500;
+            color: white;
+            text-align: center;
+            margin-bottom: 0.5em;
+          }
+
+          p {
+            font-size: smaller;
+            color: $Gray;
+            text-align: center;
+          }
+        }
+
+        .socials {
+          img {
+            height: 1em;
+            width: 1em;
+            margin: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+  .attribution {
+    background-color: $Very-Dark-Violet;
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    color: $Gray;
+  }
+  .attribution a {
+    color: $Cyan;
+  }
+}
